@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddNotesActivity">
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="13dp"
+        android:paddingEnd="10dp"
+        android:textStyle="italic"
+        tools:text="Just now" />
+
+    <EditText
+        android:id="@+id/addTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/title"
+        android:inputType="textCapSentences"
+        android:padding="10dp"
+        android:paddingStart="13dp"
+        android:textColor="@color/color_opposite"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/addBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/write_something_down"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:paddingStart="13dp"
+        android:textColor="@color/color_opposite"
+        android:textSize="18sp" />
+</androidx.appcompat.widget.LinearLayoutCompat>
